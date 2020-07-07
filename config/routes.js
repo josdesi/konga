@@ -28,6 +28,10 @@ module.exports.routes = {
     res.send(200);
   },
 
+  'GET /healthCheck': function (req, res) {
+    res.send(200);
+  },
+
   '/': async (req, res) => {
 
     const baseUrl = process.env.BASE_URL ? process.env.BASE_URL : '';
